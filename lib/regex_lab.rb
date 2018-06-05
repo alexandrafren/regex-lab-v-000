@@ -23,10 +23,12 @@ end
 end
 
 def valid_phone_number?(phone)
-  valid_numbers = phone.grep(/(\d+)(.{1})(\d+)(.{1})(\d+)/)
-  if valid_numbers = phone
+  phone.each do |valid_numbers|
+    valid_numbers.scan(/\d+/)
+    if valid_numbers.length = 10
+      phone.each
+    else
+      return false
+    end
     return true
-  else
-    return false
   end
-end
