@@ -24,5 +24,9 @@ end
 
 def valid_phone_number?(phone)
 phone_breakdown = phone.scan(/(\d+)(\.+)(\d+)(\.+)(\d+)/)
-phone_breakdown.grep(/\w{10}/)
+if phone_breakdown.grep(/\w{10}/)
+  return true
+else
+  return false
+end
 end
