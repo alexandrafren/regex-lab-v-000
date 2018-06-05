@@ -25,12 +25,12 @@ end
 def valid_phone_number?(phone)
   phone.each do |valid_numbers|
     valid_numbers.scan(/\d+/)
-    if valid_numbers.length = 10
+    if valid_numbers.length == 10
       return true
     else
       return false
     end
-    if valid_numbers.all? = true
+    if valid_numbers.all? == true
       return true
     else
       return false
