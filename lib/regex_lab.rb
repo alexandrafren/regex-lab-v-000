@@ -24,7 +24,7 @@ end
 
 def valid_phone_number?(phone)
 valid_phone_number?.each |numbers| do
-  if phone|numbers|.scan(/(\d+)(\D)(\d+)(\d+)/)
+  if numbers.scan(/(\d+)(\D)(\d+)(\d+)/) 
     return phone|numbers|
   else
     return false
