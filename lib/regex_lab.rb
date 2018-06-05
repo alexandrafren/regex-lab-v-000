@@ -32,3 +32,4 @@ def valid_phone_number?(phone)
     end
     return true
   end
+end
