@@ -23,14 +23,12 @@ end
 end
 
 def valid_phone_number?(phone)
-  valid_numbers.all?{ |number| valid_phone_number?(number)}
+  valid_numbers = phone.scan(/(\d+)(.{1})(\d+)(.{1})(\d+)/)
+  if valid_numbers = phone
+    return true
+  else
+    return false
+  end
 end
 
 
-#valid_numbers = phone.scan()
-#if valid_numbers
-  #return truevalid_numbers.all?(/\w{3}\w{3}\w{4}/)
-#else
-#  return false
-#end
-#end
