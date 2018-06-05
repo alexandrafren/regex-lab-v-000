@@ -31,10 +31,10 @@ valid_phone_number?.each |numbers| do
 end
 
 
-valid_numbers = phone.scan()
-if valid_numbers
-  return truevalid_numbers.all?(/\w{3}\w{3}\w{4}/)
-else
-  return false
-end
-end
+#valid_numbers = phone.scan()
+#if valid_numbers
+  #return truevalid_numbers.all?(/\w{3}\w{3}\w{4}/)
+#else
+#  return false
+#end
+#end
