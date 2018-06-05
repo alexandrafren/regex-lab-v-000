@@ -23,8 +23,8 @@ end
 end
 
 def valid_phone_number?(phone)
-phone_breakdown = phone.scan(/(\d+)(\D)(\d+)(\d+)/)
-if phone_breakdown.grep(/^\w{3}\w{3}\w{4}/)
+valid_numbers = phone.scan(/(\d+)(\D)(\d+)(\d+)/)
+if valid_numbers.all?
   return true
 else
   return false
