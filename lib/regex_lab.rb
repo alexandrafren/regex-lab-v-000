@@ -23,7 +23,7 @@ end
 end
 
 def valid_phone_number?(phone)
-
+  valid_numbers.all?{ |number| valid_phone_number?(number)}
 end
 
 
