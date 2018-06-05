@@ -28,6 +28,8 @@ valid_phone_number?.each |numbers| do
     return phone|numbers|
   else
     return false
+  end
+end
 end
 
 
