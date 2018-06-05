@@ -23,7 +23,7 @@ end
 end
 
 def valid_phone_number?(phone)
-  valid_numbers = phone.scan(/(\d+)(.{1})(\d+)(.{1})(\d+)/)
+  valid_numbers = phone.grep(/(\d+)(.{1})(\d+)(.{1})(\d+)/)
   if valid_numbers = phone
     return true
   else
